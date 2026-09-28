@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lavemais Tapetes | Lavanderia em Taubaté</title>
+<meta name="description" content="Lavemais Tapetes em Taubaté. Limpeza, lavagem e higienização de tapetes. Solicite seu orçamento pelo WhatsApp.">
+<meta property="og:title" content="Lavemais Tapetes | Lavanderia em Taubaté">
+<meta property="og:description" content="Limpeza, lavagem e higienização de tapetes em Taubaté - SP e região do Vale do Paraíba. 5,0 no Google, +1.000 clientes atendidos.">
+<link rel="icon" type="image/png" href="assets/logo-escura.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Lavanderia Lavemais Tapetes","telephone":"+5512997733067","address":{"@type":"PostalAddress","streetAddress":"R. Amadeu Orestes Matera, 56 - Independência","addressLocality":"Taubaté","addressRegion":"SP","postalCode":"12031-610","addressCountry":"BR"},"areaServed":"Vale do Paraíba"}
+</script>
+<style>
+:root{
+  --ink:#0A1017; --black:#070B10; --blue:#0E6FE0; --blue-deep:#0B4FA8; --cyan:#22B7E6;
+  --off:#F5F8FB; --white:#FFFFFF; --gray:#5B6B78; --line:#E4EAF0; --green:#22C55E;
+  box-sizing:border-box;
+}
+*{box-sizing:inherit;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);background:var(--white);
+  padding-top:env(safe-area-inset-top,0px);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px;position:relative}
+h1,h2,h3{font-weight:800;letter-spacing:-0.02em;line-height:1.08;color:var(--ink)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.06em;color:var(--blue);font-weight:800;margin-bottom:16px;text-transform:uppercase}
+.eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:100px;font-weight:700;font-size:.98rem;transition:transform .2s ease, box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:var(--green);color:#fff;box-shadow:0 10px 26px -6px rgba(34,197,94,.5)}
+.btn-p:hover{box-shadow:0 14px 32px -6px rgba(34,197,94,.65)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 26px -6px rgba(14,111,224,.45)}
+.btn-blue:hover{box-shadow:0 14px 32px -6px rgba(14,111,224,.55)}
+.btn-o{border:2px solid var(--ink);color:var(--ink)}
+.btn-o:hover{background:var(--ink);color:#fff}
+.btn-w{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-w:hover{background:#fff;color:var(--ink)}
+section{padding:120px 0;position:relative}
+@media(max-width:760px){section{padding:80px 0}}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.35;z-index:0;pointer-events:none}
+
+/* photo placeholder texture */
+.ph{position:relative;background:linear-gradient(150deg,var(--blue-deep) 0%,var(--blue) 55%,var(--cyan) 120%);border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -20px rgba(14,111,224,.35)}
+.ph::after{content:'';position:absolute;inset:0;background:
+  radial-gradient(circle at 25% 15%,rgba(255,255,255,.25),transparent 50%),
+  repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 2px,transparent 2px 26px)}
+.ph .tag{position:absolute;left:20px;bottom:18px;color:rgba(255,255,255,.85);font-size:.72rem;font-weight:700;letter-spacing:.04em;z-index:2}
+.photo{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -20px rgba(10,16,23,.25)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.photo:hover img{transform:scale(1.04)}
+
+/* Header */
+header{position:fixed;top:0;left:0;right:0;z-index:200;padding-top:env(safe-area-inset-top,0px);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s ease,box-shadow .3s ease}
+header.solid{border-bottom-color:var(--line);box-shadow:0 4px 24px -16px rgba(10,16,23,.15)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px}
+.logo-img{height:32px;width:auto;display:block}
+.nav-links{display:flex;gap:34px;align-items:center;font-weight:600;font-size:.94rem}
+.nav-links a:not(.btn){color:var(--ink);transition:color .2s}
+.nav-links a:not(.btn):hover{color:var(--blue)}
+#menu-toggle{display:none}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:5}
+.burger span{width:22px;height:2px;background:var(--ink)}
+@media(max-width:860px){
+  .nav-links{position:fixed;inset:0 0 auto 0;top:0;background:var(--white);flex-direction:column;justify-content:center;align-items:center;height:100vh;gap:30px;display:none;font-size:1.3rem}
+  #menu-toggle:checked ~ .nav-links{display:flex}
+  .burger{display:flex}
+}
+
+/* Hero */
+.hero{padding-top:168px;padding-bottom:64px;background:linear-gradient(180deg,var(--off) 0%,var(--white) 100%);overflow:hidden}
+.hero-logo{width:clamp(220px,26vw,340px);margin:0 auto 30px}
+.hero-center{text-align:center;max-width:760px;margin:0 auto}
+.hero h1{font-size:clamp(2.3rem,5.2vw,3.8rem)}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero p{margin-top:20px;font-size:1.15rem;color:var(--gray);max-width:44ch;margin-left:auto;margin-right:auto}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:34px}
+.hero-stats{display:flex;gap:34px;justify-content:center;margin-top:52px;flex-wrap:wrap}
+.hero-stats .n{font-size:1.6rem;font-weight:800;color:var(--blue)}
+.hero-stats .l{font-size:.84rem;color:var(--gray)}
+.hero-stats .stars{color:#F5A623;letter-spacing:2px;font-size:1.1rem}
+.hero-visual{position:relative;margin:64px auto 0;border-radius:28px;overflow:hidden;width:min(100%,360px);aspect-ratio:9/16;box-shadow:0 30px 60px -24px rgba(10,16,23,.3);background:#000}
+.hero-visual video{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:760px){.hero-visual{width:min(100%,300px)}}
+
+/* Prova social */
+.proof{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:40px;align-items:center}
+.proof h2{font-size:clamp(1.6rem,2.6vw,2.1rem);max-width:14ch}
+.proof-stat .n{font-size:2.8rem;font-weight:800;color:var(--blue)}
+.proof-stat .l{color:var(--gray);font-size:.92rem;margin-top:4px;font-weight:600}
+@media(max-width:900px){.proof{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.proof{grid-template-columns:1fr}}
+
+/* Serviços - cards estilo referência */
+.svc-head{text-align:center;max-width:52ch;margin:0 auto 56px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.svc-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:36px 30px;transition:transform .3s ease, box-shadow .3s ease}
+.svc-card:hover{transform:translateY(-6px);box-shadow:0 24px 44px -22px rgba(10,16,23,.18)}
+.svc-icon{width:56px;height:56px;border-radius:16px;background:linear-gradient(150deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:22px;color:#fff}
+.svc-card h3{font-size:1.2rem;margin-bottom:10px}
+.svc-card p{color:var(--gray);font-size:.96rem;margin-bottom:18px}
+.svc-link{font-weight:700;font-size:.9rem;color:var(--blue)}
+@media(max-width:860px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+/* Processo */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:56px;position:relative}
+.proc::before{content:'';position:absolute;top:19px;left:0;right:0;height:2px;background:var(--line)}
+.proc-num{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.88rem;font-weight:800;position:relative;z-index:2;margin-bottom:22px}
+.proc-item h4{font-size:1.15rem;margin-bottom:8px}
+.proc-item p{color:var(--gray);font-size:.92rem;max-width:22ch}
+@media(max-width:760px){.proc{grid-template-columns:1fr 1fr;row-gap:44px}.proc::before{display:none}}
+
+/* Diferenciais */
+.diff{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.diff h2{font-size:clamp(2rem,4vw,2.9rem);max-width:14ch}
+.diff p.lead{color:var(--gray);font-size:1.08rem;margin-top:20px;max-width:38ch}
+.diff-tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.diff-tags span{padding:10px 20px;border:2px solid var(--line);background:var(--off);border-radius:100px;font-size:.88rem;font-weight:700;color:var(--ink)}
+@media(max-width:860px){.diff{grid-template-columns:1fr}}
+
+/* Galeria */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:52px}
+.g1{grid-column:span 4;aspect-ratio:5/4}
+.g2{grid-column:span 2;aspect-ratio:1}
+.g3{grid-column:span 2;aspect-ratio:1}
+.g4{grid-column:span 4;aspect-ratio:16/7}
+.g5{grid-column:span 3;aspect-ratio:4/3}
+.g6{grid-column:span 3;aspect-ratio:4/3}
+.gal .ph{transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.gal .ph:hover{transform:scale(1.02)}
+@media(max-width:760px){.gal{grid-template-columns:1fr 1fr}.g1,.g4,.g5,.g6{grid-column:span 2}}
+
+/* Reviews */
+.rev{text-align:center;max-width:640px;margin:0 auto}
+.rev .stars{color:#F5A623;font-size:1.8rem;letter-spacing:3px}
+.rev h2{font-size:clamp(2rem,4vw,2.7rem);margin-top:18px}
+.rev p{color:var(--gray);margin-top:14px;font-size:1.05rem;font-weight:600}
+
+/* Localização */
+.loc{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.loc h2{font-size:clamp(2rem,3.6vw,2.7rem)}
+.loc-addr{margin-top:22px;color:var(--gray);line-height:1.8}
+.loc-addr strong{color:var(--ink);display:block;font-size:1.05rem}
+iframe.map{width:100%;height:400px;border:0;border-radius:22px}
+@media(max-width:860px){.loc{grid-template-columns:1fr}iframe.map{height:280px}}
+
+/* CTA final */
+.cta{position:relative;overflow:hidden;background:linear-gradient(140deg,var(--blue-deep) 0%,var(--blue) 55%,var(--cyan) 130%);color:#fff;border-radius:32px;padding:96px 40px;text-align:center;margin:0 28px}
+.cta h2{position:relative;z-index:1;font-size:clamp(2.1rem,5vw,3.5rem);color:#fff;max-width:18ch;margin:0 auto}
+.cta p{position:relative;z-index:1;color:rgba(255,255,255,.85);margin:18px auto 36px;max-width:36ch;font-size:1.05rem}
+.cta .btn{position:relative;z-index:1}
+
+footer{background:var(--black);color:rgba(255,255,255,.65);padding:64px 0 calc(32px + env(safe-area-inset-bottom,0px))}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px;padding-bottom:36px}
+.foot-links{display:flex;gap:24px;flex-wrap:wrap}
+.foot-links a{color:rgba(255,255,255,.7);font-size:.9rem;font-weight:600}
+.foot-links a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;font-size:.85rem;text-align:center;color:rgba(255,255,255,.45)}
+
+.float-w{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:24px;z-index:190;background:var(--green);color:#fff;border-radius:100px;display:flex;align-items:center;gap:10px;padding:15px;box-shadow:0 10px 26px rgba(34,197,94,.45);animation:pulse 2.8s ease-in-out infinite}
+.float-w span{display:none;padding-right:6px;font-weight:700;font-size:.92rem}
+@media(min-width:860px){.float-w span{display:inline}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="wrap nav">
+    <a href="#inicio" aria-label="Lavemais Tapetes"><img class="logo-img" src="assets/logo-escura.png" alt="Lavemais Tapetes"></a>
+    <input type="checkbox" id="menu-toggle">
+    <label class="burger" for="menu-toggle"><span></span><span></span><span></span></label>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-p" href="https://wa.me/5512997733067?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap hero-center reveal">
+    <img class="hero-logo" src="assets/logo-escura.png" alt="Lavemais Tapetes">
+    <h1>Seu tapete merece <em>um novo começo</em>.</h1>
+    <p>Limpeza e higienização de tapetes com cuidado de verdade, para quem não abre mão de qualidade — em Taubaté, SP.</p>
+    <div class="hero-actions">
+      <a class="btn btn-p" href="https://wa.me/5512997733067?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Lavemais%20Tapetes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento</a>
+      <a class="btn btn-o" href="#servicos">Conhecer nossos serviços</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stars">★★★★★</div><div class="l">5,0 no Google</div></div>
+      <div><div class="n" data-count="1000">0</div><div class="l">clientes atendidos</div></div>
+      <div><div class="n">Vale do</div><div class="l">Paraíba</div></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="hero-visual reveal">
+      <video src="assets/video-processo.mp4" poster="assets/video-poster.webp" autoplay muted loop playsinline preload="auto" aria-label="Vídeo do processo Lavemais Tapetes"></video>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap proof reveal">
+    <h2>Mais de 1.000 clientes já confiaram na Lavemais.</h2>
+    <div class="proof-stat"><div class="stars" style="color:#F5A623">★★★★★</div><div class="l">5,0 no Google</div></div>
+    <div class="proof-stat"><div class="n" data-count="1000">0</div><div class="l">clientes atendidos</div></div>
+    <div class="proof-stat"><div class="n">SP</div><div class="l">Taubaté e Vale do Paraíba</div></div>
+  </div>
+</section>
+
+<section id="servicos" style="background:var(--off)">
+  <div class="wrap">
+    <div class="svc-head reveal">
+      <p class="eyebrow" style="justify-content:center;display:flex">O que fazemos</p>
+      <h2>Especialistas em cuidar do que faz parte da sua casa.</h2>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc-card">
+        <div class="svc-icon">💧</div>
+        <h3>Lavagem de Tapetes</h3>
+        <p>Lavagem cuidadosa que preserva as fibras e a cor original do seu tapete.</p>
+        <a class="svc-link" href="https://wa.me/5512997733067?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20lavagem%20de%20tapetes." target="_blank" rel="noopener">Solicitar orçamento →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">✨</div>
+        <h3>Higienização</h3>
+        <p>Higienização profunda que cuida da limpeza e da saúde do ambiente.</p>
+        <a class="svc-link" href="https://wa.me/5512997733067?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20higieniza%C3%A7%C3%A3o." target="_blank" rel="noopener">Solicitar orçamento →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🧼</div>
+        <h3>Limpeza Profunda</h3>
+        <p>Tratamento completo para tapetes que precisam de cuidado especial, remoção de sujeiras e manchas.</p>
+        <a class="svc-link" href="https://wa.me/5512997733067?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20limpeza%20profunda." target="_blank" rel="noopener">Solicitar orçamento →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="processo">
+  <div class="wrap reveal">
+    <p class="eyebrow">Processo</p>
+    <h2 style="font-size:clamp(2rem,4vw,2.8rem);max-width:14ch">Do cuidado à limpeza.</h2>
+    <div class="proc">
+      <div class="proc-item"><div class="proc-num">01</div><h4>Contato</h4><p>Fale conosco pelo WhatsApp e informe o que você precisa.</p></div>
+      <div class="proc-item"><div class="proc-num">02</div><h4>Avaliação</h4><p>Nossa equipe orienta você sobre o serviço ideal.</p></div>
+      <div class="proc-item"><div class="proc-num">03</div><h4>Limpeza</h4><p>Seu tapete recebe os cuidados necessários.</p></div>
+      <div class="proc-item"><div class="proc-num">04</div><h4>Entrega</h4><p>Você recebe seu tapete limpo e higienizado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" style="background:var(--off)">
+  <div class="wrap diff">
+    <div class="reveal">
+      <p class="eyebrow">Sobre nós</p>
+      <h2>Seu tapete não é apenas um tapete.</h2>
+      <p class="lead">Ele faz parte da sua casa, da sua rotina e dos seus momentos. Por isso, cada peça merece atenção e cuidado — esse é o compromisso da Lavemais Tapetes, em Taubaté.</p>
+      <div class="diff-tags">
+        <span>Cuidado</span><span>Qualidade</span><span>Experiência</span><span>Atendimento</span>
+      </div>
+    </div>
+    <div class="photo reveal" style="aspect-ratio:4/5"><img src="assets/foto3.webp" alt="Equipamento batedor de tapetes da Lavemais Tapetes" loading="lazy"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <p class="eyebrow">Galeria</p>
+    <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin-bottom:0">Nosso trabalho</h2>
+    <div class="gal">
+      <div class="photo g1"><img src="assets/foto1.webp" alt="Estrutura da Lavemais Tapetes com tapete sendo higienizado" loading="lazy"></div>
+      <div class="photo g2"><img src="assets/foto2.webp" alt="Tapete persa higienizado pela Lavemais Tapetes" loading="lazy"></div>
+      <div class="photo g3"><img src="assets/foto3.webp" alt="Equipamento batedor de tapetes da Lavemais Tapetes" loading="lazy"></div>
+      <div class="photo g4"><img src="assets/foto4.webp" alt="Tapetes decorativos higienizados pela Lavemais Tapetes" loading="lazy"></div>
+      <div class="photo g5"><img src="assets/foto5.webp" alt="Tapete texturizado higienizado pela Lavemais Tapetes" loading="lazy"></div>
+      <div class="photo g6"><img src="assets/foto6.webp" alt="Estrutura da Lavemais Tapetes com equipamentos" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes" style="background:var(--off)">
+  <div class="wrap rev reveal">
+    <p class="eyebrow" style="justify-content:center;display:flex">Reputação</p>
+    <div class="stars">★★★★★</div>
+    <h2>Quem conhece, recomenda.</h2>
+    <p>5,0 no Google — mais de 1.000 clientes atendidos</p>
+    <div style="margin-top:34px">
+      <a class="btn btn-o" href="https://www.google.com/search?q=Lavemais+Tapetes+Taubat%C3%A9" target="_blank" rel="noopener">Ver todas as avaliações</a>
+    </div>
+  </div>
+</section>
+
+<section id="localizacao">
+  <div class="wrap loc reveal">
+    <div>
+      <p class="eyebrow">Localização</p>
+      <h2>Estamos em Taubaté e no Vale do Paraíba.</h2>
+      <div class="loc-addr">
+        <strong>Lavanderia Lavemais Tapetes</strong>
+        R. Amadeu Orestes Matera, 56 — Independência<br>
+        Taubaté - SP, 12031-610
+      </div>
+      <p style="margin-top:24px;font-weight:700;color:var(--ink);font-size:.92rem">Retirada grátis em:</p>
+      <div class="diff-tags" style="margin-top:12px">
+        <span>Taubaté</span><span>São José dos Campos</span><span>Caçapava</span><span>Tremembé</span><span>Pindamonhangaba</span><span>Santo Antônio do Pinhal</span><span>Campos do Jordão</span>
+      </div>
+      <p style="margin-top:20px;color:var(--gray);font-size:.98rem">Estamos localizados em Taubaté, mas atendemos toda a região do Vale do Paraíba.</p>
+      <a class="btn btn-o" style="margin-top:28px" href="https://www.google.com/maps/place/?q=place_id:ChIJV8l84Vj5zJQRoec7QU6pzWw" target="_blank" rel="noopener">Como chegar</a>
+    </div>
+    <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=place_id:ChIJV8l84Vj5zJQRoec7QU6pzWw&output=embed"></iframe>
+  </div>
+</section>
+
+<section id="contato" style="background:var(--off)">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="blob" style="width:360px;height:360px;background:#fff;top:-140px;right:-80px;opacity:.18"></div>
+      <h2>Seu tapete pode ficar como novo.</h2>
+      <p>Fale com a Lavemais e solicite seu orçamento.</p>
+      <a class="btn btn-p" style="font-size:1.05rem;padding:19px 38px" href="https://wa.me/5512997733067?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Lavemais%20Tapetes%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento pelo WhatsApp</a>
+      <p style="margin-top:22px;color:rgba(255,255,255,.7);font-size:.9rem">(12) 99773-3067</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <img class="logo-img" src="assets/logo-clara.png" alt="Lavemais Tapetes" style="height:30px">
+      <div class="foot-links">
+        <a href="#servicos">Serviços</a><a href="#processo">Como funciona</a><a href="#avaliacoes">Avaliações</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+      </div>
+      <a href="https://wa.me/5512997733067" style="color:rgba(255,255,255,.85);font-weight:700">(12) 99773-3067</a>
+    </div>
+    <div class="foot-bottom">R. Amadeu Orestes Matera, 56 - Independência, Taubaté - SP &nbsp;·&nbsp; © 2026 Lavemais Tapetes. Todos os direitos reservados. &nbsp;·&nbsp; Desenvolvido por <a href="https://www.threecoresolucoes.com.br" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Three Core Soluções</a></div>
+  </div>
+</footer>
+
+<a class="float-w" href="https://wa.me/5512997733067?text=Ol%C3%A1!%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Lavemais%20Tapetes." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" style="margin-left:15px"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.4c1.42.78 3.02 1.19 4.65 1.19h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0012.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.65-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.02-2.42.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.56.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg>
+  <span>Fale conosco</span>
+</a>
+
+<script>
+const header=document.getElementById('site-header');
+addEventListener('scroll',()=>header.classList.toggle('solid',scrollY>40),{passive:true});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+
+// garante autoplay do vídeo mesmo se o navegador bloquear o atributo sozinho
+document.querySelectorAll('.hero-visual video').forEach(v=>{
+  v.muted=true;
+  const tryPlay=()=>v.play().catch(()=>{});
+  tryPlay();
+  document.addEventListener('touchstart',tryPlay,{once:true});
+  document.addEventListener('click',tryPlay,{once:true});
+});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const counted=new WeakSet();
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting && !counted.has(e.target)){
+    counted.add(e.target);
+    const el=e.target,target=+el.dataset.count,dur=1200,t0=performance.now();
+    function step(t){const p=Math.min((t-t0)/dur,1);el.textContent=Math.floor(p*target).toLocaleString('pt-BR')+(p>=1?'+':'');requestAnimationFrame(p<1?step:()=>{});}
+    requestAnimationFrame(step);
+  }
+}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+</script>
+</body>
+</html>
